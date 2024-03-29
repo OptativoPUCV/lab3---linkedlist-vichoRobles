@@ -11,3 +11,19 @@ Fri 29 Mar 2024 11:19:08 PM UTC:
  tests:  1|5
 total_score: 10/70
 40489ff
+Fri 29 Mar 2024 11:22:48 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:39:8: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   39 |   if (!lista->head) return NULL;
+      |        ^~~~~
+      |        list
+list.c:39:8: note: each undeclared identifier is reported only once for each function it appears in
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+254e72a
